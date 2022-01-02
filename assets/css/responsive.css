@@ -1,0 +1,212 @@
+/* Tablet & Mobile */
+@media (max-width: 63.9375em) {
+    .hide-on-tablet-mobile {
+        display: none;
+    }
+
+    .nav-bar,
+    .subnav,
+    .search-sugg--list {
+        display: none;
+    }
+
+    #header {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #container {
+        /* margin-top: calc(var(--header-height) + var(--sort-bar-mobile-height)) */
+        margin-top: var(--header-height);
+    }
+
+    .cart {
+        width: 100px;
+        line-height: 0;
+    }
+
+    .list-products {
+        position: fixed;
+        top: var(--header-height);
+        right: 0;
+        width: 100%;
+    }
+
+    .list-products__has-cart::before {
+        display: none;
+    }
+
+    .sort-bar-mobile {
+        display: block;
+    }
+
+    .go-back {
+        padding: calc(var(--sort-bar-mobile-height) + 20px) 10px 20px 10px;
+    }
+
+    /* .filter__icon {
+        display: block;
+    } */
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    :root {
+        /* Height */
+        --header-height: 56px;
+        --nav-bar-height: 0px;
+        --header-with-search-height: calc(var(--header-height) - var(--nav-bar-height));
+    }
+
+    #header {
+        background-image: unset;
+        background-color: var(--white-color);
+    }
+
+    .header-with-search {
+        height: var(--header-with-search-height);
+        padding: 0;
+        align-items: center;
+    }
+    
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .shopee-logo, 
+    .search-bar__find-btn, 
+    .search-bar__place-options {
+        display: none;
+    }
+    
+    .filter-mobile,
+    .filter-mobile__icon,
+    .search-bar__goback-icon {
+        display: block;
+    }
+
+    .search-bar__inp {
+        background-color: #f2f2f2;
+        margin: 0 20px;
+    }
+    
+    .search-bar__inp::placeholder {
+        color: var(--primary-color);
+        text-transform: uppercase;
+    }
+
+    .cart {
+        width: unset;
+    }
+
+    .cart__icon {
+        color: var(--primary-color);
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    :root {
+        /* Height */
+        --header-height: 72px;
+        --nav-bar-height: 0px;
+        --header-with-search-height: calc(var(--header-height) - var(--nav-bar-height));
+    }
+    
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .header-with-search {
+        height: var(--header-with-search-height);
+        padding: 0;
+        align-items: center;
+    }
+    
+    .search {
+        position: absolute;
+        display: none;
+    }
+
+    .search-bar {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: var(--header-height);
+        animation: PullDown linear 0.25s;
+    }
+
+    @keyframes PullDown {
+        from {
+            opacity: 0;
+            top: calc(var(--header-height)/2);
+        }
+
+        to {
+            opacity: 1;
+            top: calc(var(--header-height));
+        }
+    }
+
+    .search-history {
+        position: fixed;
+        top: 120px;
+        width: 100%;
+    }
+
+    #mobile-search__input:checked ~ .search {
+        display: block
+    }
+
+    .mobile-search__icon {
+        display: block;
+    }
+
+    .shopee-logo__icon {
+        height: 45px;
+        margin: 0;
+        line-height: auto;
+    }
+
+    .cart {
+        width: unset;
+    }
+
+    .cart__icon {
+        margin-right: 10px;
+    }
+
+    .products-wrapper {
+        margin: 0 8px;
+    }
+
+    .pagination-item:nth-child(5),
+    .pagination-item:nth-child(6) {
+        display: none;
+    }
+
+    .pagination-item {
+        margin: 0 5px;
+    }
+
+    .footer__title,
+    .footer__item--link {
+        text-align: center;
+    }
+
+    .region_countries {
+        margin-top: 10px;
+        flex: unset;
+    }
+
+    .policy--list {
+        flex-wrap: wrap ;
+    }
+
+    .footer__ministry-img {
+        width: 100%;
+    }
+}
