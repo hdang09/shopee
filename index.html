@@ -10,13 +10,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">     -->
     <link rel="icon" type="image/x-icon" href="./img/header/shopee-logo.png">
+    <!-- Grid library -->
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    
+    <!-- Icon -->
     <link rel="stylesheet" href="./fonts/fontawesome/css/all.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Responsive -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
-    <header id="header">
-        <div class="grid">
+    <div id="main">
+        <header id="header">
+        <div class="grid wide">
             <div class="nav-bar">
                 <ul class="nav-bar__list">
                     <li class="nav-bar__list--item"><a class="nav-bar__text separate" href="#">Kênh Người Bán</a></li>
@@ -150,14 +159,23 @@
             </div>
     
             <div class="header-with-search">
+                <label for="mobile-search__input">
+                    <i class="mobile-search__icon fas fa-search"></i>
+                </label>
+                <input type="checkbox" name="" hidden id="mobile-search__input">
+
                 <div class="shopee-logo">
                     <a href="#">
                         <img src="./img/header/header-with-search/shopee-logo.png" alt="Shopee Logo" class="shopee-logo__icon">
                     </a>
                 </div>
+
                 <div class="search">
                    <div class="search-bar">
-                        <input type="text" name="" id="" class="search-bar__inp" placeholder="Tìm trong Shop này">
+                        <i class="search-bar__goback-icon fas fa-arrow-left"></i>
+                        
+                        <!-- <i class="search-in-box fas fa-search"></i> -->
+                        <input type="text" name="" id="" class="search-bar__inp" placeholder="Tìm trong Shop này">s
                         <div class="search-bar__place-options">
                             <div class="place-options--label">
                                 <p class="place-options--label-text">Trong Shop này</p>
@@ -196,813 +214,984 @@
                         <li class="search-sugg--item"><a href="#">Sữa Rửa Mặt</a></li>
                    </ul>
                 </div>
-                <div class="cart show-has-cart">
+
+                <!-- The word "mobile" includes mobile and tablet  -->
+                <div class="filter-mobile">
+                    <label for="filter-mobile__input" class="filter-mobile__icon fas fa-filter"></label>
+                    <input type="checkbox" hidden name="" id="filter-mobile__input">
+                    <label for="filter-mobile__input" class="filter-mobile__overlay"></label>
+                    <div for="filter-mobile__input" class="filter-drawer">
+                        <header class="filter-drawer__header">Bộ lọc tìm kiếm</header>
+                        <div class="filter-drawer__section">
+                            <h3 class="filter-drawer__section-title">Theo Danh Mục</h3>
+                            <ul class="grid filter-drawer__section-list">
+                                <div class="row">
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="filter-drawer__section">
+                            <h3 class="filter-drawer__section-title">Theo Danh Mục</h3>
+                            <ul class="grid filter-drawer__section-list">
+                                <div class="row">
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                    <li class="col m-6 filter-drawer__section-item">
+                                        <a href="" class="filter-drawer__section-item-link">Giày sục & Giày búp bê</a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                        
+                        <footer class="filter-drawer__footer">
+                            <button class="filter-drawer__footer-reset-btn">Thiết lập lại</button>
+                            <label for="filter-mobile__input" class="filter-drawer__footer-apply-btn">Ứng dụng</label>
+                        </footer>
+                    </div>
+                </div>
+                
+
+                <div class="cart">
                     <i class="cart__icon fas fa-shopping-cart">
-                        <div class="list-products list-products__no-cart">
+                        <!-- JAVASCRIPT - Has cart: list-products__no-cart -->
+                        <div class="list-products">
                             <img src="./img/header/header-with-search/no-cart.png" alt="No cart" class="list-products__no-cart--img">
                             <p class="list-products__no-cart--text">Chưa Có Sản Phẩm</p>
                         </div>
+                        <span class="has-cart--num-prod">60</span>
                         <!-- JAVASCRIPT - Has cart: list-products__has-cart -->
                         <div class="list-products list-products__has-cart">
-                            <!-- <span class="has-cart--num-prod">60</span> -->
-                            <ul class="has-cart--list">
-                                <header class="has-cart--title">Sản Phẩm Mới Thêm</header>
-                                <li class="has-cart--item">
-                                    <img src="https://cf.shopee.vn/file/8800c218203dd9566645d448a4e4788e_tn" alt="" class="has-cart--item-img">
-                                    <span class="has-cart--item--prod">Bàn phím cơ Gaming K100 Full LED</span>
-                                    <span class="has-cart--item-price">₫425.000</span>
-                                </li>
-                                <li class="has-cart--item">
-                                    <img src="https://cf.shopee.vn/file/e6fb8aa9dc5363733fa1c6c01d6107c2_tn" alt="" class="has-cart--item-img">
-                                    <span class="has-cart--item--prod">Đế Tản Nhiệt Laptop Nhôm Giá Đỡ...</span> 
-                                    <span class="has-cart--item-price">₫249.000</span>
-                                </li>
-                                <li class="has-cart--item">
-                                    <img src="https://cf.shopee.vn/file/1d22557774ba87465bc81c76de57b85b_tn" alt="" class="has-cart--item-img">
-                                    <span class="has-cart--item--prod">Bàn phím cơ Coputa Bàn phím cơ...</span>
-                                    <span class="has-cart--item-price">₫429.000</span>
-                                </li>
-                                <li class="has-cart--item">
-                                    <img src="https://cf.shopee.vn/file/9e3d073dab1b824de9279fff63079f1f_tn" alt="" class="has-cart--item-img">
-                                    <span class="has-cart--item--prod">Kệ giá đỡ Laptop/Macbook... </span>
-                                    <span class="has-cart--item-price">₫155.000</span>
-                                </li>
-                                <li class="has-cart--item">
-                                    <img src="https://cf.shopee.vn/file/8357cb46a8f945353901ff268da70436_tn" alt="" class="has-cart--item-img">
-                                    <span class="has-cart--item--prod">Lót Chuột, Bàn Di Chuột Đen Cỡ...</span>
-                                    <span class="has-cart--item-price">₫85.000</span>
-                                </li>
-                            </ul>
-                            <footer class="has-cart--view-all">
-                                <span class="has-cart--remaining-prod">55 Thêm Hàng Vào Giỏ </span>
-                                <button class="has-cart--view-cart-btn"><a href="">Xem Giỏ Hàng</a></button>
-                            </footer>
-                        </div>
-                    </i>
-                    
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div id="container">
-        <div class="grid">
-            <div class="go-back">
-                <a href="#" class="go-back__link">
-                    <i class="go-back-icon fas fa-chevron-left"></i>
-                    TRỞ LẠI TRANG CỦA SHOP
-                </a>
-            </div>
-            <div class="grid__row">
-                <div class="grid__col-2">
-                    <div class="avt-shop"></div>
-                    <ul class="category">
-                        <h4 class="category__title">
-                            <i class="category__title-icon fas fa-list"></i>
-                            DANH MỤC SHOP
-                        </h4>
-                        <li class="category__item"><a style="color: var(--primary-color);" href="">Sản Phẩm</a></li>
-                        <li class="category__item"><a href="">Giày sục & Giày búp bê</a></li>
-                        <li class="category__item"><a href="">Dép đi trong nhà</a></li>
-                        <li class="category__item"><a href="">Dép kẹp/ dép xỏ ngón</a></li>
-                        <li class="category__item"><a href="">Giày thể thao/ sneaker</a></li>
-                        <li class="category__item"><a href="">Thời trang trẻ em & trẻ sơ sinh</a></li>
-                        <li class="category__item"><a href="">Thời Trang Nữ</a></li>
-                        <li class="category__item"><a href="">Phụ kiện & chăm sóc giày</a></li>
-                        <li class="category__item"><a href="">Giày Dép Nam</a></li>
-                        <li class="category__item"><a href="">Giày lười</a></li>
-                        <li class="category__item"><a href="">Sandal đế bằng</a></li>
-                        <li class="category__item"><a href="">Điện Thoại & Phụ Kiện</a></li>
-                    </ul>
-                </div>
-                <div class="grid__col-10">
-                    <div class="subnav">
-                        <div class="subnav__sort">
-                            <span class="sort__sort-text">Sắp xếp theo</span>
-                            <button class="sort__sort-btn sort__sort-btn--selected">Phổ Biến</button>
-                            <button class="sort__sort-btn">Mới Nhất</button>
-                            <button class="sort__sort-btn">Bán Chạy</button>
-                            <div class="sort--price">
-                                <p class="price-option">
-                                    Giá
-                                    <i class="sort--price__icon fas fa-chevron-down"></i>
-                                </p>
-                                <ul class="price-option--list">
-                                    <li class="price-option--item">Giá: Thấp đến Cao</li>
-                                    <li class="price-option--item">Giá: Cao đến Thấp</li>
+                            <div class="grid wide">
+                                <ul class="has-cart--list">
+                                    <header class="has-cart--title">Sản Phẩm Mới Thêm</header>
+                                    <li class="has-cart--item">
+                                        <img src="https://cf.shopee.vn/file/8800c218203dd9566645d448a4e4788e_tn" alt="" class="has-cart--item-img">
+                                        <span class="has-cart--item--prod">Bàn phím cơ Gaming K100 Full LED</span>
+                                        <span class="has-cart--item-price">₫425.000</span>
+                                    </li>
+                                    <li class="has-cart--item">
+                                        <img src="https://cf.shopee.vn/file/e6fb8aa9dc5363733fa1c6c01d6107c2_tn" alt="" class="has-cart--item-img">
+                                        <span class="has-cart--item--prod">Đế Tản Nhiệt Laptop Nhôm Giá Đỡ...</span> 
+                                        <span class="has-cart--item-price">₫249.000</span>
+                                    </li>
+                                    <li class="has-cart--item">
+                                        <img src="https://cf.shopee.vn/file/1d22557774ba87465bc81c76de57b85b_tn" alt="" class="has-cart--item-img">
+                                        <span class="has-cart--item--prod">Bàn phím cơ Coputa Bàn phím cơ...</span>
+                                        <span class="has-cart--item-price">₫429.000</span>
+                                    </li>
+                                    <li class="has-cart--item">
+                                        <img src="https://cf.shopee.vn/file/9e3d073dab1b824de9279fff63079f1f_tn" alt="" class="has-cart--item-img">
+                                        <span class="has-cart--item--prod">Kệ giá đỡ Laptop/Macbook... </span>
+                                        <span class="has-cart--item-price">₫155.000</span>
+                                    </li>
+                                    <li class="has-cart--item">
+                                        <img src="https://cf.shopee.vn/file/8357cb46a8f945353901ff268da70436_tn" alt="" class="has-cart--item-img">
+                                        <span class="has-cart--item--prod">Lót Chuột, Bàn Di Chuột Đen Cỡ...</span>
+                                        <span class="has-cart--item-price">₫85.000</span>
+                                    </li>
                                 </ul>
                             </div>
+                            <div class="has-cart--footer">
+                                <div class="grid wide">
+                                    <footer class="has-cart--view-all">
+                                        <span class="has-cart--remaining-prod">55 Thêm Hàng Vào Giỏ </span>
+                                        <button class="has-cart--view-cart-btn"><a href="">Xem Giỏ Hàng</a></button>
+                                    </footer>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="subnav__page-switch">
-                            <div class="page-switch--page-num">
-                                <span style="color: var(--primary-color);" class="page-num__current-page">1</span>
-                                /19
-                            </div>
-                            <!-- JAVASCRIPT - Disabled button: page-switch--btn-disabled -->
-                            <div class="page-switch--btn page-switch--btn-disabled">
-                                <i class="page-switch--btn-icon fas fa-chevron-left"></i>
-                            </div>
-                            <div class="page-switch--btn">
-                                <i class="page-switch--btn-icon fas fa-chevron-right"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="products-wrapper">
-                        <div class="grid__row">
-                            <div class="grid__col-2of10">
-                                <a class="prod-item" href="">
-                                    <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
-                                    <div class="prod-item__info">
-                                        <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
-                                        <span class="prod-item__info--voucher">#ShopXuHuong</span>
-                                        <span class="prod-item__info--voucher">ShopDacBiet</span>
-                                        <div class="prod-item__info--shipping">
-                                            <span class="shipping--old-price">₫133.000</span>
-                                            <span class="shipping--new-price">₫128.000</span>
-                                            <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
-                                        </div>
-                                        <div class="prod-item__info--status">
-                                            <!-- JAVASCRIPT - Reacted love: status__react--loved -->
-                                            <div class="status__react status__react--loved">
-                                                <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
-                                                <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
-                                            </div>
-                                            <div class="status__rating">
-                                                <div class="status__rating-star">
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                </div>
-                                                <span class="status__rating--sold-num">Đã bán 934</span>
-                                            </div>
-                                        </div>
-                                        <p class="prod-item__info--origin">Hà Nội</p>
-                                    </div>
-                                    <span class="prod-item__fav">
-                                        <span class="prod-item__fav-text">Yêu thích</span>
-                                    </span>
-                                    <div class="prod-item__discount">
-                                        <p class="prod-item__discount--percent">25%</p>
-                                        <p class="prod-item__discount--text">GIẢM</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="grid__col-2of10">
-                                <a class="prod-item" href="">
-                                    <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
-                                    <div class="prod-item__info">
-                                        <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
-                                        <span class="prod-item__info--voucher">#ShopXuHuong</span>
-                                        <span class="prod-item__info--voucher">ShopDacBiet</span>
-                                        <div class="prod-item__info--shipping">
-                                            <span class="shipping--old-price">₫133.000</span>
-                                            <span class="shipping--new-price">₫128.000</span>
-                                            <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
-                                        </div>
-                                        <div class="prod-item__info--status">
-                                            <!-- JAVASCRIPT - Reacted love: status__react--loved -->
-                                            <div class="status__react status__react--loved">
-                                                <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
-                                                <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
-                                            </div>
-                                            <div class="status__rating">
-                                                <div class="status__rating-star">
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                </div>
-                                                <span class="status__rating--sold-num">Đã bán 934</span>
-                                            </div>
-                                        </div>
-                                        <p class="prod-item__info--origin">Hà Nội</p>
-                                    </div>
-                                    <span class="prod-item__fav">
-                                        <span class="prod-item__fav-text">Yêu thích</span>
-                                    </span>
-                                    <div class="prod-item__discount">
-                                        <p class="prod-item__discount--percent">25%</p>
-                                        <p class="prod-item__discount--text">GIẢM</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="grid__col-2of10">
-                                <a class="prod-item" href="">
-                                    <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
-                                    <div class="prod-item__info">
-                                        <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
-                                        <span class="prod-item__info--voucher">#ShopXuHuong</span>
-                                        <span class="prod-item__info--voucher">ShopDacBiet</span>
-                                        <div class="prod-item__info--shipping">
-                                            <span class="shipping--old-price">₫133.000</span>
-                                            <span class="shipping--new-price">₫128.000</span>
-                                            <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
-                                        </div>
-                                        <div class="prod-item__info--status">
-                                            <!-- JAVASCRIPT - Reacted love: status__react--loved -->
-                                            <div class="status__react status__react--loved">
-                                                <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
-                                                <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
-                                            </div>
-                                            <div class="status__rating">
-                                                <div class="status__rating-star">
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                </div>
-                                                <span class="status__rating--sold-num">Đã bán 934</span>
-                                            </div>
-                                        </div>
-                                        <p class="prod-item__info--origin">Hà Nội</p>
-                                    </div>
-                                    <span class="prod-item__fav">
-                                        <span class="prod-item__fav-text">Yêu thích</span>
-                                    </span>
-                                    <div class="prod-item__discount">
-                                        <p class="prod-item__discount--percent">25%</p>
-                                        <p class="prod-item__discount--text">GIẢM</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="grid__col-2of10">
-                                <a class="prod-item" href="">
-                                    <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
-                                    <div class="prod-item__info">
-                                        <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
-                                        <span class="prod-item__info--voucher">#ShopXuHuong</span>
-                                        <span class="prod-item__info--voucher">ShopDacBiet</span>
-                                        <div class="prod-item__info--shipping">
-                                            <span class="shipping--old-price">₫133.000</span>
-                                            <span class="shipping--new-price">₫128.000</span>
-                                            <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
-                                        </div>
-                                        <div class="prod-item__info--status">
-                                            <!-- JAVASCRIPT - Reacted love: status__react--loved -->
-                                            <div class="status__react status__react--loved">
-                                                <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
-                                                <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
-                                            </div>
-                                            <div class="status__rating">
-                                                <div class="status__rating-star">
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                </div>
-                                                <span class="status__rating--sold-num">Đã bán 934</span>
-                                            </div>
-                                        </div>
-                                        <p class="prod-item__info--origin">Hà Nội</p>
-                                    </div>
-                                    <span class="prod-item__fav">
-                                        <span class="prod-item__fav-text">Yêu thích</span>
-                                    </span>
-                                    <div class="prod-item__discount">
-                                        <p class="prod-item__discount--percent">25%</p>
-                                        <p class="prod-item__discount--text">GIẢM</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="grid__col-2of10">
-                                <a class="prod-item" href="">
-                                    <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
-                                    <div class="prod-item__info">
-                                        <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
-                                        <span class="prod-item__info--voucher">#ShopXuHuong</span>
-                                        <span class="prod-item__info--voucher">ShopDacBiet</span>
-                                        <div class="prod-item__info--shipping">
-                                            <span class="shipping--old-price">₫133.000</span>
-                                            <span class="shipping--new-price">₫128.000</span>
-                                            <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
-                                        </div>
-                                        <div class="prod-item__info--status">
-                                            <!-- JAVASCRIPT - Reacted love: status__react--loved -->
-                                            <div class="status__react status__react--loved">
-                                                <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
-                                                <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
-                                            </div>
-                                            <div class="status__rating">
-                                                <div class="status__rating-star">
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                </div>
-                                                <span class="status__rating--sold-num">Đã bán 934</span>
-                                            </div>
-                                        </div>
-                                        <p class="prod-item__info--origin">Hà Nội</p>
-                                    </div>
-                                    <span class="prod-item__fav">
-                                        <span class="prod-item__fav-text">Yêu thích</span>
-                                    </span>
-                                    <div class="prod-item__discount">
-                                        <p class="prod-item__discount--percent">25%</p>
-                                        <p class="prod-item__discount--text">GIẢM</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="grid__col-2of10">
-                                <a class="prod-item" href="">
-                                    <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
-                                    <div class="prod-item__info">
-                                        <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
-                                        <span class="prod-item__info--voucher">#ShopXuHuong</span>
-                                        <span class="prod-item__info--voucher">ShopDacBiet</span>
-                                        <div class="prod-item__info--shipping">
-                                            <span class="shipping--old-price">₫133.000</span>
-                                            <span class="shipping--new-price">₫128.000</span>
-                                            <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
-                                        </div>
-                                        <div class="prod-item__info--status">
-                                            <!-- JAVASCRIPT - Reacted love: status__react--loved -->
-                                            <div class="status__react status__react--loved">
-                                                <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
-                                                <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
-                                            </div>
-                                            <div class="status__rating">
-                                                <div class="status__rating-star">
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                </div>
-                                                <span class="status__rating--sold-num">Đã bán 934</span>
-                                            </div>
-                                        </div>
-                                        <p class="prod-item__info--origin">Hà Nội</p>
-                                    </div>
-                                    <span class="prod-item__fav">
-                                        <span class="prod-item__fav-text">Yêu thích</span>
-                                    </span>
-                                    <div class="prod-item__discount">
-                                        <p class="prod-item__discount--percent">25%</p>
-                                        <p class="prod-item__discount--text">GIẢM</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="grid__col-2of10">
-                                <a class="prod-item" href="">
-                                    <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
-                                    <div class="prod-item__info">
-                                        <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
-                                        <span class="prod-item__info--voucher">#ShopXuHuong</span>
-                                        <span class="prod-item__info--voucher">ShopDacBiet</span>
-                                        <div class="prod-item__info--shipping">
-                                            <span class="shipping--old-price">₫133.000</span>
-                                            <span class="shipping--new-price">₫128.000</span>
-                                            <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
-                                        </div>
-                                        <div class="prod-item__info--status">
-                                            <!-- JAVASCRIPT - Reacted love: status__react--loved -->
-                                            <div class="status__react status__react--loved">
-                                                <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
-                                                <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
-                                            </div>
-                                            <div class="status__rating">
-                                                <div class="status__rating-star">
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                </div>
-                                                <span class="status__rating--sold-num">Đã bán 934</span>
-                                            </div>
-                                        </div>
-                                        <p class="prod-item__info--origin">Hà Nội</p>
-                                    </div>
-                                    <span class="prod-item__fav">
-                                        <span class="prod-item__fav-text">Yêu thích</span>
-                                    </span>
-                                    <div class="prod-item__discount">
-                                        <p class="prod-item__discount--percent">25%</p>
-                                        <p class="prod-item__discount--text">GIẢM</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="grid__col-2of10">
-                                <a class="prod-item" href="">
-                                    <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
-                                    <div class="prod-item__info">
-                                        <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
-                                        <span class="prod-item__info--voucher">#ShopXuHuong</span>
-                                        <span class="prod-item__info--voucher">ShopDacBiet</span>
-                                        <div class="prod-item__info--shipping">
-                                            <span class="shipping--old-price">₫133.000</span>
-                                            <span class="shipping--new-price">₫128.000</span>
-                                            <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
-                                        </div>
-                                        <div class="prod-item__info--status">
-                                            <!-- JAVASCRIPT - Reacted love: status__react--loved -->
-                                            <div class="status__react status__react--loved">
-                                                <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
-                                                <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
-                                            </div>
-                                            <div class="status__rating">
-                                                <div class="status__rating-star">
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                </div>
-                                                <span class="status__rating--sold-num">Đã bán 934</span>
-                                            </div>
-                                        </div>
-                                        <p class="prod-item__info--origin">Hà Nội</p>
-                                    </div>
-                                    <span class="prod-item__fav">
-                                        <span class="prod-item__fav-text">Yêu thích</span>
-                                    </span>
-                                    <div class="prod-item__discount">
-                                        <p class="prod-item__discount--percent">25%</p>
-                                        <p class="prod-item__discount--text">GIẢM</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="grid__col-2of10">
-                                <a class="prod-item" href="">
-                                    <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
-                                    <div class="prod-item__info">
-                                        <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
-                                        <span class="prod-item__info--voucher">#ShopXuHuong</span>
-                                        <span class="prod-item__info--voucher">ShopDacBiet</span>
-                                        <div class="prod-item__info--shipping">
-                                            <span class="shipping--old-price">₫133.000</span>
-                                            <span class="shipping--new-price">₫128.000</span>
-                                            <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
-                                        </div>
-                                        <div class="prod-item__info--status">
-                                            <!-- JAVASCRIPT - Reacted love: status__react--loved -->
-                                            <div class="status__react status__react--loved">
-                                                <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
-                                                <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
-                                            </div>
-                                            <div class="status__rating">
-                                                <div class="status__rating-star">
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                </div>
-                                                <span class="status__rating--sold-num">Đã bán 934</span>
-                                            </div>
-                                        </div>
-                                        <p class="prod-item__info--origin">Hà Nội</p>
-                                    </div>
-                                    <span class="prod-item__fav">
-                                        <span class="prod-item__fav-text">Yêu thích</span>
-                                    </span>
-                                    <div class="prod-item__discount">
-                                        <p class="prod-item__discount--percent">25%</p>
-                                        <p class="prod-item__discount--text">GIẢM</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="grid__col-2of10">
-                                <a class="prod-item" href="">
-                                    <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
-                                    <div class="prod-item__info">
-                                        <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
-                                        <span class="prod-item__info--voucher">#ShopXuHuong</span>
-                                        <span class="prod-item__info--voucher">ShopDacBiet</span>
-                                        <div class="prod-item__info--shipping">
-                                            <span class="shipping--old-price">₫133.000</span>
-                                            <span class="shipping--new-price">₫128.000</span>
-                                            <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
-                                        </div>
-                                        <div class="prod-item__info--status">
-                                            <!-- JAVASCRIPT - Reacted love: status__react--loved -->
-                                            <div class="status__react status__react--loved">
-                                                <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
-                                                <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
-                                            </div>
-                                            <div class="status__rating">
-                                                <div class="status__rating-star">
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                </div>
-                                                <span class="status__rating--sold-num">Đã bán 934</span>
-                                            </div>
-                                        </div>
-                                        <p class="prod-item__info--origin">Hà Nội</p>
-                                    </div>
-                                    <span class="prod-item__fav">
-                                        <span class="prod-item__fav-text">Yêu thích</span>
-                                    </span>
-                                    <div class="prod-item__discount">
-                                        <p class="prod-item__discount--percent">25%</p>
-                                        <p class="prod-item__discount--text">GIẢM</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="grid__col-2of10">
-                                <a class="prod-item" href="">
-                                    <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
-                                    <div class="prod-item__info">
-                                        <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
-                                        <span class="prod-item__info--voucher">#ShopXuHuong</span>
-                                        <span class="prod-item__info--voucher">ShopDacBiet</span>
-                                        <div class="prod-item__info--shipping">
-                                            <span class="shipping--old-price">₫133.000</span>
-                                            <span class="shipping--new-price">₫128.000</span>
-                                            <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
-                                        </div>
-                                        <div class="prod-item__info--status">
-                                            <!-- JAVASCRIPT - Reacted love: status__react--loved -->
-                                            <div class="status__react status__react--loved">
-                                                <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
-                                                <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
-                                            </div>
-                                            <div class="status__rating">
-                                                <div class="status__rating-star">
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                </div>
-                                                <span class="status__rating--sold-num">Đã bán 934</span>
-                                            </div>
-                                        </div>
-                                        <p class="prod-item__info--origin">Hà Nội</p>
-                                    </div>
-                                    <span class="prod-item__fav">
-                                        <span class="prod-item__fav-text">Yêu thích</span>
-                                    </span>
-                                    <div class="prod-item__discount">
-                                        <p class="prod-item__discount--percent">25%</p>
-                                        <p class="prod-item__discount--text">GIẢM</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="grid__col-2of10">
-                                <a class="prod-item" href="">
-                                    <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
-                                    <div class="prod-item__info">
-                                        <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
-                                        <span class="prod-item__info--voucher">#ShopXuHuong</span>
-                                        <span class="prod-item__info--voucher">ShopDacBiet</span>
-                                        <div class="prod-item__info--shipping">
-                                            <span class="shipping--old-price">₫133.000</span>
-                                            <span class="shipping--new-price">₫128.000</span>
-                                            <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
-                                        </div>
-                                        <div class="prod-item__info--status">
-                                            <!-- JAVASCRIPT - Reacted love: status__react--loved -->
-                                            <div class="status__react status__react--loved">
-                                                <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
-                                                <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
-                                            </div>
-                                            <div class="status__rating">
-                                                <div class="status__rating-star">
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                </div>
-                                                <span class="status__rating--sold-num">Đã bán 934</span>
-                                            </div>
-                                        </div>
-                                        <p class="prod-item__info--origin">Hà Nội</p>
-                                    </div>
-                                    <span class="prod-item__fav">
-                                        <span class="prod-item__fav-text">Yêu thích</span>
-                                    </span>
-                                    <div class="prod-item__discount">
-                                        <p class="prod-item__discount--percent">25%</p>
-                                        <p class="prod-item__discount--text">GIẢM</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="grid__col-2of10">
-                                <a class="prod-item" href="">
-                                    <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
-                                    <div class="prod-item__info">
-                                        <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
-                                        <span class="prod-item__info--voucher">#ShopXuHuong</span>
-                                        <span class="prod-item__info--voucher">ShopDacBiet</span>
-                                        <div class="prod-item__info--shipping">
-                                            <span class="shipping--old-price">₫133.000</span>
-                                            <span class="shipping--new-price">₫128.000</span>
-                                            <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
-                                        </div>
-                                        <div class="prod-item__info--status">
-                                            <!-- JAVASCRIPT - Reacted love: status__react--loved -->
-                                            <div class="status__react status__react--loved">
-                                                <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
-                                                <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
-                                            </div>
-                                            <div class="status__rating">
-                                                <div class="status__rating-star">
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                </div>
-                                                <span class="status__rating--sold-num">Đã bán 934</span>
-                                            </div>
-                                        </div>
-                                        <p class="prod-item__info--origin">Hà Nội</p>
-                                    </div>
-                                    <span class="prod-item__fav">
-                                        <span class="prod-item__fav-text">Yêu thích</span>
-                                    </span>
-                                    <div class="prod-item__discount">
-                                        <p class="prod-item__discount--percent">25%</p>
-                                        <p class="prod-item__discount--text">GIẢM</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="grid__col-2of10">
-                                <a class="prod-item" href="">
-                                    <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
-                                    <div class="prod-item__info">
-                                        <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
-                                        <span class="prod-item__info--voucher">#ShopXuHuong</span>
-                                        <span class="prod-item__info--voucher">ShopDacBiet</span>
-                                        <div class="prod-item__info--shipping">
-                                            <span class="shipping--old-price">₫133.000</span>
-                                            <span class="shipping--new-price">₫128.000</span>
-                                            <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
-                                        </div>
-                                        <div class="prod-item__info--status">
-                                            <!-- JAVASCRIPT - Reacted love: status__react--loved -->
-                                            <div class="status__react status__react--loved">
-                                                <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
-                                                <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
-                                            </div>
-                                            <div class="status__rating">
-                                                <div class="status__rating-star">
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                </div>
-                                                <span class="status__rating--sold-num">Đã bán 934</span>
-                                            </div>
-                                        </div>
-                                        <p class="prod-item__info--origin">Hà Nội</p>
-                                    </div>
-                                    <span class="prod-item__fav">
-                                        <span class="prod-item__fav-text">Yêu thích</span>
-                                    </span>
-                                    <div class="prod-item__discount">
-                                        <p class="prod-item__discount--percent">25%</p>
-                                        <p class="prod-item__discount--text">GIẢM</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="grid__col-2of10">
-                                <a class="prod-item" href="">
-                                    <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
-                                    <div class="prod-item__info">
-                                        <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
-                                        <span class="prod-item__info--voucher">#ShopXuHuong</span>
-                                        <span class="prod-item__info--voucher">ShopDacBiet</span>
-                                        <div class="prod-item__info--shipping">
-                                            <span class="shipping--old-price">₫133.000</span>
-                                            <span class="shipping--new-price">₫128.000</span>
-                                            <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
-                                        </div>
-                                        <div class="prod-item__info--status">
-                                            <!-- JAVASCRIPT - Reacted love: status__react--loved -->
-                                            <div class="status__react status__react--loved">
-                                                <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
-                                                <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
-                                            </div>
-                                            <div class="status__rating">
-                                                <div class="status__rating-star">
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                    <i class="status__rating-star-icon fas fa-star"></i>
-                                                </div>
-                                                <span class="status__rating--sold-num">Đã bán 934</span>
-                                            </div>
-                                        </div>
-                                        <p class="prod-item__info--origin">Hà Nội</p>
-                                    </div>
-                                    <span class="prod-item__fav">
-                                        <span class="prod-item__fav-text">Yêu thích</span>
-                                    </span>
-                                    <div class="prod-item__discount">
-                                        <p class="prod-item__discount--percent">25%</p>
-                                        <p class="prod-item__discount--text">GIẢM</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pagination">
-                        <ul class="pagination-list">
-                            <li class="pagination-item">
-                                <a href="#" class="pagination-item--link">
-                                    <i class="pagination-item--icon fas fa-chevron-left"></i>
-                                </a>
-                            </li>
-                            <!-- JAVASCRIPT: Current page: pagination-item--active -->
-                            <li class="pagination-item pagination-item--active">
-                                <a href="#" class="pagination-item--link">1</a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="#" class="pagination-item--link">2</a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="#" class="pagination-item--link">3</a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="#" class="pagination-item--link">4</a>
-                            </li>
-                            <li class="pagination-item ">
-                                <a href="#" class="pagination-item--link">5</a>
-                            </li>
-                            <li class="pagination-item ">
-                                <a href="#" class="pagination-item--link">...</a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="#" class="pagination-item--link">
-                                    <i class="pagination-item--icon fas fa-chevron-right"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    </i>
+                    <i class="filter__icon fas fa-filter"></i>
                 </div>
             </div>
         </div>
-    </div>  
-    <footer id="footer">
-        <div class="footer__wrapper-1">
-            <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__col-2of10">
-                        <h3 class="footer__title">CHĂM SÓC KHÁCH HÀNG</h3>
-                        <ul class="footer__list">
-                            <li class="footer__item"><a class="footer__item--link" href="">Trung Tâm Trợ Giúp</a></li>
-                            <li class="footer__item"><a class="footer__item--link" href="">Shopee Blog</a></li>
-                            <li class="footer__item"><a class="footer__item--link" href="">Shopee Mall</a></li>
-                            <li class="footer__item"><a class="footer__item--link" href="">Hướng Dẫn Mua Hàng</a></li>
-                            <li class="footer__item"><a class="footer__item--link" href="">Hướng Dẫn Bán Hàng</a></li>
-                            <li class="footer__item"><a class="footer__item--link" href="">Thanh Toán</a></li>
-                            <li class="footer__item"><a class="footer__item--link" href="">Shopee Xu</a></li>
-                            <li class="footer__item"><a class="footer__item--link" href="">Vận Chuyển</a></li>
-                            <li class="footer__item"><a class="footer__item--link" href="">Trả Hàng & Hoàn Tiền</a></li>
-                            <li class="footer__item"><a class="footer__item--link" href="">Chăm Sóc Khách Hàng</a></li>
-                            <li class="footer__item"><a class="footer__item--link" href="">Chính Sách Bảo Hành</a></li>
+        </header>
+
+        <div id="container">
+            <!-- The word "mobile" includes mobile and tablet -->
+            <div class="sort-bar-mobile">
+                <ul class="sort-bar__list">
+                    <li class="sort-bar__item sort-bar__item--active">
+                        <a href="" class="sort-bar__item-link">Liên quan</a>
+                    </li>
+                    <li class="sort-bar__item">
+                        <a href="" class="sort-bar__item-link">Mới nhất</a>
+                    </li>
+                    <li class="sort-bar__item">
+                        <a href="" class="sort-bar__item-link">Bán chạy</a>
+                    </li>
+                    <li class="sort-bar__item">
+                        <a href="" class="sort-bar__item-link">
+                            Giá
+                            <i class="sort-bar__item-icon fas fa-sort"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="grid wide">
+                <div class="row sm-gutter go-back">
+                    <a href="#" class="go-back__link">
+                        <i class="go-back-icon fas fa-chevron-left"></i>
+                        TRỞ LẠI TRANG CỦA SHOP
+                    </a>
+                </div>
+                <div class="row sm-gutter">
+                    <div class="col l-2 m-0 c-0">
+                        <div class="avt-shop"></div>
+                        <ul class="category">
+                            <h4 class="category__title">
+                                <i class="category__title-icon fas fa-list"></i>
+                                DANH MỤC SHOP
+                            </h4>
+                            <li class="category__item">
+                                <a style="color: var(--primary-color);" href="">Sản Phẩm</a>
+                            </li>
+                            <li class="category__item">
+                                <a href="">Giày sục & Giày búp bê</a>
+                            </li>
+                            <li class="category__item">
+                                <a href="">Dép đi trong nhà</a>
+                            </li>
+                            <li class="category__item">
+                                <a href="">Dép kẹp/ dép xỏ ngón</a>
+                            </li>
+                            <li class="category__item">
+                                <a href="">Giày thể thao/ sneaker</a>
+                            </li>
+                            <li class="category__item">
+                                <a href="">Thời trang trẻ em & trẻ sơ sinh</a>
+                            </li>
+                            <li class="category__item">
+                                <a href="">Thời Trang Nữ</a>
+                            </li>
+                            <li class="category__item">
+                                <a href="">Phụ kiện & chăm sóc giày</a>
+                            </li>
+                            <li class="category__item">
+                                <a href="">Giày Dép Nam</a>
+                            </li>
+                            <li class="category__item">
+                                <a href="">Giày lười</a>
+                            </li>
+                            <li class="category__item">
+                                <a href="">Sandal đế bằng</a>
+                            </li>
+                            <li class="category__item">
+                                <a href="">Điện Thoại & Phụ Kiện</a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="grid__col-2of10">
-                        <h3 class="footer__title">VỀ SHOPEE</h3>
-                        <ul class="footer__list">
-                            <li class="footer__item"><a class="footer__item--link" href="">Giới Thiệu Về Shopee Việt Nam</a></li>
-                            <li class="footer__item"><a class="footer__item--link" href="">Tuyển Dụng</a></li>
-                            <li class="footer__item"><a class="footer__item--link" href="">Điều Khoản Shopee</a></li>
-                            <li class="footer__item"><a class="footer__item--link" href="">Chính Sách Bảo Mật</a></li>
-                            <li class="footer__item"><a class="footer__item--link" href="">Chính Hãng</a></li>
-                            <li class="footer__item"><a class="footer__item--link" href="">Kênh Người Bán</a></li>
-                            <li class="footer__item"><a class="footer__item--link" href="">Flash Sales</a></li>
-                            <li class="footer__item"><a class="footer__item--link" href="">Chương Trình Tiếp Thị Liên Kết Shopee</a></li>
-                            <li class="footer__item"><a class="footer__item--link" href="">Liên Hệ Với Truyền Thông</a></li>
-                        </ul>
+                    <div class="col l-10 m-12 c-12">
+                        <div class="subnav">
+                            <div class="subnav__sort">
+                                <span class="sort__sort-text">Sắp xếp theo</span>
+                                <button class="sort__sort-btn sort__sort-btn--selected">Phổ Biến</button>
+                                <button class="sort__sort-btn">Mới Nhất</button>
+                                <button class="sort__sort-btn">Bán Chạy</button>
+                                <div class="sort--price">
+                                    <p class="price-option">
+                                        Giá
+                                        <i class="sort--price__icon fas fa-chevron-down"></i>
+                                    </p>
+                                    <ul class="price-option--list">
+                                        <li class="price-option--item">Giá: Thấp đến Cao</li>
+                                        <li class="price-option--item">Giá: Cao đến Thấp</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="subnav__page-switch">
+                                <div class="page-switch--page-num">
+                                    <span style="color: var(--primary-color);" class="page-num__current-page">1</span>
+                                    /19
+                                </div>
+                                <!-- JAVASCRIPT - Disabled button: page-switch--btn-disabled -->
+                                <div class="page-switch--btn page-switch--btn-disabled">
+                                    <i class="page-switch--btn-icon fas fa-chevron-left"></i>
+                                </div>
+                                <div class="page-switch--btn">
+                                    <i class="page-switch--btn-icon fas fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products-wrapper">
+                            <div class="row sm-gutter">
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="prod-item" href="">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
+                                        <div class="prod-item__info">
+                                            <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
+                                            <span class="prod-item__info--voucher">#ShopXuHuong</span>
+                                            <span class="prod-item__info--voucher">ShopDacBiet</span>
+                                            <div class="prod-item__info--shipping">
+                                                <span class="shipping--old-price">₫133.000</span>
+                                                <span class="shipping--new-price">₫128.000</span>
+                                                <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
+                                            </div>
+                                            <div class="prod-item__info--status">
+                                                <!-- JAVASCRIPT - Reacted love: status__react--loved -->
+                                                <div class="status__react status__react--loved">
+                                                    <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
+                                                    <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
+                                                </div>
+                                                <div class="status__rating">
+                                                    <div class="status__rating-star">
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                    </div>
+                                                    <span class="status__rating--sold-num">Đã bán 934</span>
+                                                </div>
+                                            </div>
+                                            <p class="prod-item__info--origin">Hà Nội</p>
+                                        </div>
+                                        <span class="prod-item__fav">
+                                            <span class="prod-item__fav-text">Yêu thích</span>
+                                        </span>
+                                        <div class="prod-item__discount">
+                                            <p class="prod-item__discount--percent">25%</p>
+                                            <p class="prod-item__discount--text">GIẢM</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="prod-item" href="">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
+                                        <div class="prod-item__info">
+                                            <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
+                                            <span class="prod-item__info--voucher">#ShopXuHuong</span>
+                                            <span class="prod-item__info--voucher">ShopDacBiet</span>
+                                            <div class="prod-item__info--shipping">
+                                                <span class="shipping--old-price">₫133.000</span>
+                                                <span class="shipping--new-price">₫128.000</span>
+                                                <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
+                                            </div>
+                                            <div class="prod-item__info--status">
+                                                <!-- JAVASCRIPT - Reacted love: status__react--loved -->
+                                                <div class="status__react status__react--loved">
+                                                    <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
+                                                    <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
+                                                </div>
+                                                <div class="status__rating">
+                                                    <div class="status__rating-star">
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                    </div>
+                                                    <span class="status__rating--sold-num">Đã bán 934</span>
+                                                </div>
+                                            </div>
+                                            <p class="prod-item__info--origin">Hà Nội</p>
+                                        </div>
+                                        <span class="prod-item__fav">
+                                            <span class="prod-item__fav-text">Yêu thích</span>
+                                        </span>
+                                        <div class="prod-item__discount">
+                                            <p class="prod-item__discount--percent">25%</p>
+                                            <p class="prod-item__discount--text">GIẢM</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="prod-item" href="">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
+                                        <div class="prod-item__info">
+                                            <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
+                                            <span class="prod-item__info--voucher">#ShopXuHuong</span>
+                                            <span class="prod-item__info--voucher">ShopDacBiet</span>
+                                            <div class="prod-item__info--shipping">
+                                                <span class="shipping--old-price">₫133.000</span>
+                                                <span class="shipping--new-price">₫128.000</span>
+                                                <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
+                                            </div>
+                                            <div class="prod-item__info--status">
+                                                <!-- JAVASCRIPT - Reacted love: status__react--loved -->
+                                                <div class="status__react status__react--loved">
+                                                    <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
+                                                    <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
+                                                </div>
+                                                <div class="status__rating">
+                                                    <div class="status__rating-star">
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                    </div>
+                                                    <span class="status__rating--sold-num">Đã bán 934</span>
+                                                </div>
+                                            </div>
+                                            <p class="prod-item__info--origin">Hà Nội</p>
+                                        </div>
+                                        <span class="prod-item__fav">
+                                            <span class="prod-item__fav-text">Yêu thích</span>
+                                        </span>
+                                        <div class="prod-item__discount">
+                                            <p class="prod-item__discount--percent">25%</p>
+                                            <p class="prod-item__discount--text">GIẢM</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="prod-item" href="">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
+                                        <div class="prod-item__info">
+                                            <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
+                                            <span class="prod-item__info--voucher">#ShopXuHuong</span>
+                                            <span class="prod-item__info--voucher">ShopDacBiet</span>
+                                            <div class="prod-item__info--shipping">
+                                                <span class="shipping--old-price">₫133.000</span>
+                                                <span class="shipping--new-price">₫128.000</span>
+                                                <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
+                                            </div>
+                                            <div class="prod-item__info--status">
+                                                <!-- JAVASCRIPT - Reacted love: status__react--loved -->
+                                                <div class="status__react status__react--loved">
+                                                    <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
+                                                    <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
+                                                </div>
+                                                <div class="status__rating">
+                                                    <div class="status__rating-star">
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                    </div>
+                                                    <span class="status__rating--sold-num">Đã bán 934</span>
+                                                </div>
+                                            </div>
+                                            <p class="prod-item__info--origin">Hà Nội</p>
+                                        </div>
+                                        <span class="prod-item__fav">
+                                            <span class="prod-item__fav-text">Yêu thích</span>
+                                        </span>
+                                        <div class="prod-item__discount">
+                                            <p class="prod-item__discount--percent">25%</p>
+                                            <p class="prod-item__discount--text">GIẢM</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="prod-item" href="">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
+                                        <div class="prod-item__info">
+                                            <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
+                                            <span class="prod-item__info--voucher">#ShopXuHuong</span>
+                                            <span class="prod-item__info--voucher">ShopDacBiet</span>
+                                            <div class="prod-item__info--shipping">
+                                                <span class="shipping--old-price">₫133.000</span>
+                                                <span class="shipping--new-price">₫128.000</span>
+                                                <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
+                                            </div>
+                                            <div class="prod-item__info--status">
+                                                <!-- JAVASCRIPT - Reacted love: status__react--loved -->
+                                                <div class="status__react status__react--loved">
+                                                    <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
+                                                    <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
+                                                </div>
+                                                <div class="status__rating">
+                                                    <div class="status__rating-star">
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                    </div>
+                                                    <span class="status__rating--sold-num">Đã bán 934</span>
+                                                </div>
+                                            </div>
+                                            <p class="prod-item__info--origin">Hà Nội</p>
+                                        </div>
+                                        <span class="prod-item__fav">
+                                            <span class="prod-item__fav-text">Yêu thích</span>
+                                        </span>
+                                        <div class="prod-item__discount">
+                                            <p class="prod-item__discount--percent">25%</p>
+                                            <p class="prod-item__discount--text">GIẢM</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="prod-item" href="">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
+                                        <div class="prod-item__info">
+                                            <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
+                                            <span class="prod-item__info--voucher">#ShopXuHuong</span>
+                                            <span class="prod-item__info--voucher">ShopDacBiet</span>
+                                            <div class="prod-item__info--shipping">
+                                                <span class="shipping--old-price">₫133.000</span>
+                                                <span class="shipping--new-price">₫128.000</span>
+                                                <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
+                                            </div>
+                                            <div class="prod-item__info--status">
+                                                <!-- JAVASCRIPT - Reacted love: status__react--loved -->
+                                                <div class="status__react status__react--loved">
+                                                    <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
+                                                    <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
+                                                </div>
+                                                <div class="status__rating">
+                                                    <div class="status__rating-star">
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                    </div>
+                                                    <span class="status__rating--sold-num">Đã bán 934</span>
+                                                </div>
+                                            </div>
+                                            <p class="prod-item__info--origin">Hà Nội</p>
+                                        </div>
+                                        <span class="prod-item__fav">
+                                            <span class="prod-item__fav-text">Yêu thích</span>
+                                        </span>
+                                        <div class="prod-item__discount">
+                                            <p class="prod-item__discount--percent">25%</p>
+                                            <p class="prod-item__discount--text">GIẢM</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="prod-item" href="">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
+                                        <div class="prod-item__info">
+                                            <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
+                                            <span class="prod-item__info--voucher">#ShopXuHuong</span>
+                                            <span class="prod-item__info--voucher">ShopDacBiet</span>
+                                            <div class="prod-item__info--shipping">
+                                                <span class="shipping--old-price">₫133.000</span>
+                                                <span class="shipping--new-price">₫128.000</span>
+                                                <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
+                                            </div>
+                                            <div class="prod-item__info--status">
+                                                <!-- JAVASCRIPT - Reacted love: status__react--loved -->
+                                                <div class="status__react status__react--loved">
+                                                    <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
+                                                    <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
+                                                </div>
+                                                <div class="status__rating">
+                                                    <div class="status__rating-star">
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                    </div>
+                                                    <span class="status__rating--sold-num">Đã bán 934</span>
+                                                </div>
+                                            </div>
+                                            <p class="prod-item__info--origin">Hà Nội</p>
+                                        </div>
+                                        <span class="prod-item__fav">
+                                            <span class="prod-item__fav-text">Yêu thích</span>
+                                        </span>
+                                        <div class="prod-item__discount">
+                                            <p class="prod-item__discount--percent">25%</p>
+                                            <p class="prod-item__discount--text">GIẢM</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="prod-item" href="">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
+                                        <div class="prod-item__info">
+                                            <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
+                                            <span class="prod-item__info--voucher">#ShopXuHuong</span>
+                                            <span class="prod-item__info--voucher">ShopDacBiet</span>
+                                            <div class="prod-item__info--shipping">
+                                                <span class="shipping--old-price">₫133.000</span>
+                                                <span class="shipping--new-price">₫128.000</span>
+                                                <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
+                                            </div>
+                                            <div class="prod-item__info--status">
+                                                <!-- JAVASCRIPT - Reacted love: status__react--loved -->
+                                                <div class="status__react status__react--loved">
+                                                    <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
+                                                    <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
+                                                </div>
+                                                <div class="status__rating">
+                                                    <div class="status__rating-star">
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                    </div>
+                                                    <span class="status__rating--sold-num">Đã bán 934</span>
+                                                </div>
+                                            </div>
+                                            <p class="prod-item__info--origin">Hà Nội</p>
+                                        </div>
+                                        <span class="prod-item__fav">
+                                            <span class="prod-item__fav-text">Yêu thích</span>
+                                        </span>
+                                        <div class="prod-item__discount">
+                                            <p class="prod-item__discount--percent">25%</p>
+                                            <p class="prod-item__discount--text">GIẢM</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="prod-item" href="">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
+                                        <div class="prod-item__info">
+                                            <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
+                                            <span class="prod-item__info--voucher">#ShopXuHuong</span>
+                                            <span class="prod-item__info--voucher">ShopDacBiet</span>
+                                            <div class="prod-item__info--shipping">
+                                                <span class="shipping--old-price">₫133.000</span>
+                                                <span class="shipping--new-price">₫128.000</span>
+                                                <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
+                                            </div>
+                                            <div class="prod-item__info--status">
+                                                <!-- JAVASCRIPT - Reacted love: status__react--loved -->
+                                                <div class="status__react status__react--loved">
+                                                    <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
+                                                    <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
+                                                </div>
+                                                <div class="status__rating">
+                                                    <div class="status__rating-star">
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                    </div>
+                                                    <span class="status__rating--sold-num">Đã bán 934</span>
+                                                </div>
+                                            </div>
+                                            <p class="prod-item__info--origin">Hà Nội</p>
+                                        </div>
+                                        <span class="prod-item__fav">
+                                            <span class="prod-item__fav-text">Yêu thích</span>
+                                        </span>
+                                        <div class="prod-item__discount">
+                                            <p class="prod-item__discount--percent">25%</p>
+                                            <p class="prod-item__discount--text">GIẢM</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="prod-item" href="">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
+                                        <div class="prod-item__info">
+                                            <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
+                                            <span class="prod-item__info--voucher">#ShopXuHuong</span>
+                                            <span class="prod-item__info--voucher">ShopDacBiet</span>
+                                            <div class="prod-item__info--shipping">
+                                                <span class="shipping--old-price">₫133.000</span>
+                                                <span class="shipping--new-price">₫128.000</span>
+                                                <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
+                                            </div>
+                                            <div class="prod-item__info--status">
+                                                <!-- JAVASCRIPT - Reacted love: status__react--loved -->
+                                                <div class="status__react status__react--loved">
+                                                    <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
+                                                    <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
+                                                </div>
+                                                <div class="status__rating">
+                                                    <div class="status__rating-star">
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                    </div>
+                                                    <span class="status__rating--sold-num">Đã bán 934</span>
+                                                </div>
+                                            </div>
+                                            <p class="prod-item__info--origin">Hà Nội</p>
+                                        </div>
+                                        <span class="prod-item__fav">
+                                            <span class="prod-item__fav-text">Yêu thích</span>
+                                        </span>
+                                        <div class="prod-item__discount">
+                                            <p class="prod-item__discount--percent">25%</p>
+                                            <p class="prod-item__discount--text">GIẢM</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="prod-item" href="">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
+                                        <div class="prod-item__info">
+                                            <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
+                                            <span class="prod-item__info--voucher">#ShopXuHuong</span>
+                                            <span class="prod-item__info--voucher">ShopDacBiet</span>
+                                            <div class="prod-item__info--shipping">
+                                                <span class="shipping--old-price">₫133.000</span>
+                                                <span class="shipping--new-price">₫128.000</span>
+                                                <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
+                                            </div>
+                                            <div class="prod-item__info--status">
+                                                <!-- JAVASCRIPT - Reacted love: status__react--loved -->
+                                                <div class="status__react status__react--loved">
+                                                    <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
+                                                    <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
+                                                </div>
+                                                <div class="status__rating">
+                                                    <div class="status__rating-star">
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                    </div>
+                                                    <span class="status__rating--sold-num">Đã bán 934</span>
+                                                </div>
+                                            </div>
+                                            <p class="prod-item__info--origin">Hà Nội</p>
+                                        </div>
+                                        <span class="prod-item__fav">
+                                            <span class="prod-item__fav-text">Yêu thích</span>
+                                        </span>
+                                        <div class="prod-item__discount">
+                                            <p class="prod-item__discount--percent">25%</p>
+                                            <p class="prod-item__discount--text">GIẢM</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="prod-item" href="">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
+                                        <div class="prod-item__info">
+                                            <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
+                                            <span class="prod-item__info--voucher">#ShopXuHuong</span>
+                                            <span class="prod-item__info--voucher">ShopDacBiet</span>
+                                            <div class="prod-item__info--shipping">
+                                                <span class="shipping--old-price">₫133.000</span>
+                                                <span class="shipping--new-price">₫128.000</span>
+                                                <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
+                                            </div>
+                                            <div class="prod-item__info--status">
+                                                <!-- JAVASCRIPT - Reacted love: status__react--loved -->
+                                                <div class="status__react status__react--loved">
+                                                    <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
+                                                    <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
+                                                </div>
+                                                <div class="status__rating">
+                                                    <div class="status__rating-star">
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                    </div>
+                                                    <span class="status__rating--sold-num">Đã bán 934</span>
+                                                </div>
+                                            </div>
+                                            <p class="prod-item__info--origin">Hà Nội</p>
+                                        </div>
+                                        <span class="prod-item__fav">
+                                            <span class="prod-item__fav-text">Yêu thích</span>
+                                        </span>
+                                        <div class="prod-item__discount">
+                                            <p class="prod-item__discount--percent">25%</p>
+                                            <p class="prod-item__discount--text">GIẢM</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="prod-item" href="">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
+                                        <div class="prod-item__info">
+                                            <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
+                                            <span class="prod-item__info--voucher">#ShopXuHuong</span>
+                                            <span class="prod-item__info--voucher">ShopDacBiet</span>
+                                            <div class="prod-item__info--shipping">
+                                                <span class="shipping--old-price">₫133.000</span>
+                                                <span class="shipping--new-price">₫128.000</span>
+                                                <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
+                                            </div>
+                                            <div class="prod-item__info--status">
+                                                <!-- JAVASCRIPT - Reacted love: status__react--loved -->
+                                                <div class="status__react status__react--loved">
+                                                    <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
+                                                    <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
+                                                </div>
+                                                <div class="status__rating">
+                                                    <div class="status__rating-star">
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                    </div>
+                                                    <span class="status__rating--sold-num">Đã bán 934</span>
+                                                </div>
+                                            </div>
+                                            <p class="prod-item__info--origin">Hà Nội</p>
+                                        </div>
+                                        <span class="prod-item__fav">
+                                            <span class="prod-item__fav-text">Yêu thích</span>
+                                        </span>
+                                        <div class="prod-item__discount">
+                                            <p class="prod-item__discount--percent">25%</p>
+                                            <p class="prod-item__discount--text">GIẢM</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="prod-item" href="">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
+                                        <div class="prod-item__info">
+                                            <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
+                                            <span class="prod-item__info--voucher">#ShopXuHuong</span>
+                                            <span class="prod-item__info--voucher">ShopDacBiet</span>
+                                            <div class="prod-item__info--shipping">
+                                                <span class="shipping--old-price">₫133.000</span>
+                                                <span class="shipping--new-price">₫128.000</span>
+                                                <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
+                                            </div>
+                                            <div class="prod-item__info--status">
+                                                <!-- JAVASCRIPT - Reacted love: status__react--loved -->
+                                                <div class="status__react status__react--loved">
+                                                    <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
+                                                    <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
+                                                </div>
+                                                <div class="status__rating">
+                                                    <div class="status__rating-star">
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                    </div>
+                                                    <span class="status__rating--sold-num">Đã bán 934</span>
+                                                </div>
+                                            </div>
+                                            <p class="prod-item__info--origin">Hà Nội</p>
+                                        </div>
+                                        <span class="prod-item__fav">
+                                            <span class="prod-item__fav-text">Yêu thích</span>
+                                        </span>
+                                        <div class="prod-item__discount">
+                                            <p class="prod-item__discount--percent">25%</p>
+                                            <p class="prod-item__discount--text">GIẢM</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="prod-item" href="">
+                                        <div style="background-image: url(https://cf.shopee.vn/file/5a304484b6abd4b950c84d8bc275897b), url(https://cf.shopee.vn/file/e56983124425103c6f571bf575650e4c_tn);" class="prod-item__img"></div>
+                                        <div class="prod-item__info">
+                                            <h3 class="prod-item__info--name">Dép sục siêu nhẹ chống nước TẶNG 12 STICK cho nam nữ</h3>
+                                            <span class="prod-item__info--voucher">#ShopXuHuong</span>
+                                            <span class="prod-item__info--voucher">ShopDacBiet</span>
+                                            <div class="prod-item__info--shipping">
+                                                <span class="shipping--old-price">₫133.000</span>
+                                                <span class="shipping--new-price">₫128.000</span>
+                                                <img src="./img/container/freeship.jfif" class="shipping--freeship-img"></img>
+                                            </div>
+                                            <div class="prod-item__info--status">
+                                                <!-- JAVASCRIPT - Reacted love: status__react--loved -->
+                                                <div class="status__react status__react--loved">
+                                                    <i class="status__react--icon status__react--icon-unlove far fa-heart"></i>
+                                                    <i class="status__react--icon status__react--icon-loved fas fa-heart"></i>
+                                                </div>
+                                                <div class="status__rating">
+                                                    <div class="status__rating-star">
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                        <i class="status__rating-star-icon fas fa-star"></i>
+                                                    </div>
+                                                    <span class="status__rating--sold-num">Đã bán 934</span>
+                                                </div>
+                                            </div>
+                                            <p class="prod-item__info--origin">Hà Nội</p>
+                                        </div>
+                                        <span class="prod-item__fav">
+                                            <span class="prod-item__fav-text">Yêu thích</span>
+                                        </span>
+                                        <div class="prod-item__discount">
+                                            <p class="prod-item__discount--percent">25%</p>
+                                            <p class="prod-item__discount--text">GIẢM</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pagination">
+                            <ul class="pagination-list">
+                                <li class="pagination-item">
+                                    <a href="#" class="pagination-item--link">
+                                        <i class="pagination-item--icon fas fa-chevron-left"></i>
+                                    </a>
+                                </li>
+                                <!-- JAVASCRIPT: Current page: pagination-item--active -->
+                                <li class="pagination-item pagination-item--active">
+                                    <a href="#" class="pagination-item--link">1</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="#" class="pagination-item--link">2</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="#" class="pagination-item--link">3</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="#" class="pagination-item--link">4</a>
+                                </li>
+                                <li class="pagination-item ">
+                                    <a href="#" class="pagination-item--link">5</a>
+                                </li>
+                                <li class="pagination-item ">
+                                    <a href="#" class="pagination-item--link">...</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="#" class="pagination-item--link">
+                                        <i class="pagination-item--icon fas fa-chevron-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="grid__col-2of10">
-                        <h3 class="footer__title">THANH TOÁN</h3>
-                        <ul class="footer__list">
-                            <img class="payment--img" src="./img/footer/payment.png" alt="">
-                            <!-- <li class="footer__item"></li>
+                </div>
+            </div>
+        </div>  
+
+        <footer id="footer">
+            <div class="footer__wrapper-1">
+                <div class="grid wide">
+                    <div class="row sm-gutter">
+                        <div class="col l-2-4 m-4 c-6">
+                            <h3 class="footer__title">CHĂM SÓC KHÁCH HÀNG</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item"><a class="footer__item--link" href="">Trung Tâm Trợ Giúp</a></li>
+                                <li class="footer__item"><a class="footer__item--link" href="">Shopee Blog</a></li>
+                                <li class="footer__item"><a class="footer__item--link" href="">Shopee Mall</a></li>
+                                <li class="footer__item"><a class="footer__item--link" href="">Hướng Dẫn Mua Hàng</a></li>
+                                <li class="footer__item"><a class="footer__item--link" href="">Hướng Dẫn Bán Hàng</a></li>
+                                <li class="footer__item"><a class="footer__item--link" href="">Thanh Toán</a></li>
+                                <li class="footer__item"><a class="footer__item--link" href="">Shopee Xu</a></li>
+                                <li class="footer__item"><a class="footer__item--link" href="">Vận Chuyển</a></li>
+                                <li class="footer__item"><a class="footer__item--link" href="">Trả Hàng & Hoàn Tiền</a></li>
+                                <li class="footer__item"><a class="footer__item--link" href="">Chăm Sóc Khách Hàng</a></li>
+                                <li class="footer__item"><a class="footer__item--link" href="">Chính Sách Bảo Hành</a></li>
+                            </ul>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6">
+                            <h3 class="footer__title">VỀ SHOPEE</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item"><a class="footer__item--link" href="">Giới Thiệu Về Shopee Việt Nam</a></li>
+                                <li class="footer__item"><a class="footer__item--link" href="">Tuyển Dụng</a></li>
+                                <li class="footer__item"><a class="footer__item--link" href="">Điều Khoản Shopee</a></li>
+                                <li class="footer__item"><a class="footer__item--link" href="">Chính Sách Bảo Mật</a></li>
+                                <li class="footer__item"><a class="footer__item--link" href="">Chính Hãng</a></li>
+                                <li class="footer__item"><a class="footer__item--link" href="">Kênh Người Bán</a></li>
+                                <li class="footer__item"><a class="footer__item--link" href="">Flash Sales</a></li>
+                                <li class="footer__item"><a class="footer__item--link" href="">Chương Trình Tiếp Thị Liên Kết Shopee</a></li>
+                                <li class="footer__item"><a class="footer__item--link" href="">Liên Hệ Với Truyền Thông</a></li>
+                            </ul>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6">
+                            <h3 class="footer__title">THANH TOÁN</h3>
+                            <ul class="footer__list">
+                                <img class="payment--img" src="./img/footer/payment.png" alt="">
+                                <!-- <li class="footer__item"></li>
+                                    <li class="footer__item"></li>
+                                    <li class="footer__item"></li>
+                                    <li class="footer__item"></li>
+                                    <li class="footer__item"></li>
+                                    <li class="footer__item"></li>
+                                    <li class="footer__item"></li>
+                                    <li class="footer__item"></li>
+                                    <li class="footer__item"></li> -->
+                                </ul>
+                                <h3 class="footer__title">ĐƠN VỊ VẬN CHUYỂN</h3>
+                            <ul class="footer__list">
+                                <img class="payment--img" src="./img/footer/shipping-unit.png" alt="">
+                                <!-- <li class="footer__item"></li>
                                 <li class="footer__item"></li>
                                 <li class="footer__item"></li>
                                 <li class="footer__item"></li>
@@ -1012,183 +1201,171 @@
                                 <li class="footer__item"></li>
                                 <li class="footer__item"></li> -->
                             </ul>
-                            <h3 class="footer__title">ĐƠN VỊ VẬN CHUYỂN</h3>
-                        <ul class="footer__list">
-                            <img class="payment--img" src="./img/footer/shipping-unit.png" alt="">
-                            <!-- <li class="footer__item"></li>
-                            <li class="footer__item"></li>
-                            <li class="footer__item"></li>
-                            <li class="footer__item"></li>
-                            <li class="footer__item"></li>
-                            <li class="footer__item"></li>
-                            <li class="footer__item"></li>
-                            <li class="footer__item"></li>
-                            <li class="footer__item"></li> -->
-                        </ul>
-                    </div>
-                    <div class="grid__col-2of10">
-                        <h3 class="footer__title">THEO DÕI CHÚNG TÔI TRÊN</h3>
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <a class="footer__item--link social--link" href="">
-                                    <i class="footer__item--icon fab fa-facebook-square"></i>
-                                    <span>Facebook</span> 
-                                </a>
-                            </li>
-                            <li class="footer__item">
-                                <a class="footer__item--link social--link" href="">
-                                    <i class="footer__item--icon fab fa-instagram-square"></i>
-                                    <span>Instagram</span> 
-                                </a>
-                            </li>
-                            <li class="footer__item">
-                                <a class="footer__item--link social--link" href="">
-                                    <i class="footer__item--icon fab fa-linkedin"></i>
-                                    <span>Linked</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="grid__col-2of10">
-                        <h3 class="footer__title">TẢI ỨNG DỤNG SHOPEE NGAY THÔI</h3>
-                        <div class="info-apps">
-                            <div class="info-apps__qr-code">
-                                <a href="">
-                                    <img class="info-apps__qr-code--img" src="./img/header/nav-bar/qr-code.png" alt="">
-                                </a>
-                            </div>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6">
+                            <h3 class="footer__title">THEO DÕI CHÚNG TÔI TRÊN</h3>
                             <ul class="footer__list">
                                 <li class="footer__item">
-                                    <a href="">
-                                        <img class="info-apps--img" src="./img/header/nav-bar/app-store.png" alt="">
+                                    <a class="footer__item--link social--link" href="">
+                                        <i class="footer__item--icon fab fa-facebook-square"></i>
+                                        <span>Facebook</span> 
                                     </a>
-                                </li> 
+                                </li>
                                 <li class="footer__item">
-                                    <a href="">
-                                        <img class="info-apps--img" src="./img/header/nav-bar/google-play.png" alt="">
+                                    <a class="footer__item--link social--link" href="">
+                                        <i class="footer__item--icon fab fa-instagram-square"></i>
+                                        <span>Instagram</span> 
                                     </a>
-                                </li> 
+                                </li>
                                 <li class="footer__item">
-                                    <a href="">
-                                        <img class="info-apps--img" src="./img/header/nav-bar/app-gallery.png" alt="">
+                                    <a class="footer__item--link social--link" href="">
+                                        <i class="footer__item--icon fab fa-linkedin"></i>
+                                        <span>Linked</span>
                                     </a>
-                                </li> 
+                                </li>
                             </ul>
                         </div>
+                        <div class="col l-2-4 m-4 c-6">
+                            <h3 class="footer__title">TẢI ỨNG DỤNG SHOPEE NGAY THÔI</h3>
+                            <div class="info-apps">
+                                <div class="info-apps__qr-code">
+                                    <a href="">
+                                        <img class="info-apps__qr-code--img" src="./img/header/nav-bar/qr-code.png" alt="">
+                                    </a>
+                                </div>
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a href="">
+                                            <img class="info-apps--img" src="./img/header/nav-bar/app-store.png" alt="">
+                                        </a>
+                                    </li> 
+                                    <li class="footer__item">
+                                        <a href="">
+                                            <img class="info-apps--img" src="./img/header/nav-bar/google-play.png" alt="">
+                                        </a>
+                                    </li> 
+                                    <li class="footer__item">
+                                        <a href="">
+                                            <img class="info-apps--img" src="./img/header/nav-bar/app-gallery.png" alt="">
+                                        </a>
+                                    </li> 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row sm-gutter footer__region">
+                        <span class="region__info">© 2021 Shopee. Tất cả các quyền được bảo lưu.</span>
+                        <span class="region_countries">Quốc gia & Khu vực: Singapore | Indonesia | Đài Loan | Thái Lan | Malaysia | Việt Nam | Philippines | Brazil | México | Colombia | Chile <br> | Poland | Spain | France | India</span>
                     </div>
                 </div>
-                <div class="grid__row footer__region">
-                    <span class="region__info">© 2021 Shopee. Tất cả các quyền được bảo lưu.</span>
-                    <span class="region_countries">Quốc gia & Khu vực: Singapore | Indonesia | Đài Loan | Thái Lan | Malaysia | Việt Nam | Philippines | Brazil | México | Colombia | Chile <br> | Poland | Spain | France | India</span>
+            </div>
+            <div class="footer__wrapper-2">
+                <div class="grid wide">
+                    <div class="grid-row sm-gutter footer_policy">
+                        <ul class="policy--list">
+                            <li class="policy--item">
+                                <a href="#" class="policy--item-link">CHÍNH SÁCH BẢO MẬT</a>
+                            </li>
+                            <li class="policy--item">
+                                <a href="#" class="policy--item-link">QUY CHẾ HOẠT ĐỘNG</a>
+                            </li>
+                            <li class="policy--item">
+                                <a href="#" class="policy--item-link">CHÍNH SÁCH VẬN CHUYỂN</a>
+                            </li>
+                            <li class="policy--item">
+                                <a href="#" class="policy--item-link">CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <img class="footer__ministry-img" src="./img/footer/ministry.png" alt="">
+                    <div class="row sm-gutter footer__contact">
+                        <p class="footer__contact-company">Công ty TNHH Shopee</p>
+                        <p class="footer__contact-text">Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, Phường Ngọc Khánh, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn</p>
+                        <p class="footer__contact-text">Chịu Trách Nhiệm Quản Lý Nội Dung: Nguyễn Đức Trí - Điện thoại liên hệ: 024 73081221 (ext 4678)</p>
+                        <p class="footer__contact-text">Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015 </p>
+                        <p class="footer__contact-text">© 2015 - Bản quyền thuộc về Công ty TNHH Shopee </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer__wrapper-2">
-            <div class="grid">
-                <div class="grid-row footer_policy">
-                    <ul class="policy--list">
-                        <li class="policy--item separate-black">
-                            <a href="#" class="policy--item-link">CHÍNH SÁCH BẢO MẬT</a>
-                        </li>
-                        <li class="policy--item separate-black">
-                            <a href="#" class="policy--item-link">QUY CHẾ HOẠT ĐỘNG</a>
-                        </li>
-                        <li class="policy--item separate-black">
-                            <a href="#" class="policy--item-link">CHÍNH SÁCH VẬN CHUYỂN</a>
-                        </li>
-                        <li class="policy--item">
-                            <a href="#" class="policy--item-link">CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</a>
-                        </li>
-                    </ul>
-                </div>
-                <img class="footer__ministry-img" src="./img/footer/ministry.png" alt="">
-                <div class="grid__row footer__contact">
-                    <p class="footer__contact-company">Công ty TNHH Shopee</p>
-                    <p class="footer__contact-text">Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, Phường Ngọc Khánh, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn</p>
-                    <p class="footer__contact-text">Chịu Trách Nhiệm Quản Lý Nội Dung: Nguyễn Đức Trí - Điện thoại liên hệ: 024 73081221 (ext 4678)</p>
-                    <p class="footer__contact-text">Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015 </p>
-                    <p class="footer__contact-text">© 2015 - Bản quyền thuộc về Công ty TNHH Shopee </p>
-                </div>
-            </div>
-        </div>
-        <div style="text-align: center;">Link original page: <a href="https://shopee.vn/shop/237972052/search">DÉP CROSS VIỆT NAM</a> </div> 
-    </footer>
+            <div style="text-align: center;">Link original page: <a href="https://shopee.vn/shop/237972052/search">DÉP CROSS VIỆT NAM</a> </div> 
+        </footer>
 
-    <div id="box-chat">
-        <i class="box-chat--icon fas fa-comments"></i>
-        <p class="box-chat--text">Chat</p> 
-    </div>
-
-    <div id="modal">
-        <div class="modal__overlay"></div>
-        <div class="sign-up">
-            <header class="sign-up__header">Đăng Ký</header>
-            <div class="sign-up__container">
-                <input type="tel" class="sign-up__inp" placeholder="Số điện thoại">
-                <button style="margin-bottom: 30px;" class="sign-up__btn">TIẾP THEO</button>
-                <div class="separate-part">
-                    <div class="separate-part__line"></div>
-                    <p class="separate-part__or-text">HOẶC</p>
-                    <div class="separate-part__line"></div>
-                </div>
-                <div class="reg__socials">
-                    <button class="social-btn fb-btn">
-                        <i class="social-btn__icon fab fa-facebook"></i>
-                        <span class="social-btn__fb-text">Facebook</span> 
-                    </button>
-                    <button class="social-btn gg-btn">
-                        <i class="social-btn__icon fab fa-google"></i>
-                        <span class="social-btn__gg-text">Google</span> 
-                    </button>
-                    <button class="social-btn apple-btn">
-                        <i class="social-btn__icon fab fa-apple"></i>
-                        <span class="social-btn__apple-text">Apple</span> 
-                    </button>
-                </div>
-                <p class="sign-up__policy">
-                    Bằng việc đăng kí, bạn đã đồng ý với Shopee về <br>
-                    <a href="#">Điều khoản dịch vụ</a> & <a href="">Chính sách bảo mật</a>
-                </p>
-            </div>
-            <footer class="sign-up__footer">
-                Bạn đã có tài khoản?
-                <a href="">Đăng nhập</a>
-            </footer>
+        <div id="box-chat">
+            <i class="box-chat--icon fas fa-comments"></i>
+            <p class="box-chat--text">Chat</p> 
         </div>
-        <div class="log-in">
-            <header class="log-in__header">Đăng Nhập</header>
-            <div class="log-in__container">
-                <input type="text" class="log-in__inp" placeholder="Email/Số điện thoại/Tên đăng nhập">
-                <input type="tel" class="log-in__inp" placeholder="Mật khẩu">
-                <button class="log-in__btn">ĐĂNG NHẬP</button>
-                <div class="log-in__another-login">
-                    <a href="">Quên mật khẩu</a>
-                    <a href="">Đăng nhập với SMS</a>
+
+        <div id="modal">
+            <div class="modal__overlay"></div>
+            <div class="sign-up">
+                <header class="sign-up__header">Đăng Ký</header>
+                <div class="sign-up__container">
+                    <input type="tel" class="sign-up__inp" placeholder="Số điện thoại">
+                    <button style="margin-bottom: 30px;" class="sign-up__btn">TIẾP THEO</button>
+                    <div class="separate-part">
+                        <div class="separate-part__line"></div>
+                        <p class="separate-part__or-text">HOẶC</p>
+                        <div class="separate-part__line"></div>
+                    </div>
+                    <div class="reg__socials">
+                        <button class="social-btn fb-btn">
+                            <i class="social-btn__icon fab fa-facebook"></i>
+                            <span class="social-btn__fb-text">Facebook</span> 
+                        </button>
+                        <button class="social-btn gg-btn">
+                            <i class="social-btn__icon fab fa-google"></i>
+                            <span class="social-btn__gg-text">Google</span> 
+                        </button>
+                        <button class="social-btn apple-btn">
+                            <i class="social-btn__icon fab fa-apple"></i>
+                            <span class="social-btn__apple-text">Apple</span> 
+                        </button>
+                    </div>
+                    <p class="sign-up__policy">
+                        Bằng việc đăng kí, bạn đã đồng ý với Shopee về <br>
+                        <a href="#">Điều khoản dịch vụ</a> & <a href="">Chính sách bảo mật</a>
+                    </p>
                 </div>
-                <div class="separate-part">
-                    <div class="separate-part__line"></div>
-                    <p class="separate-part__or-text">HOẶC</p>
-                    <div class="separate-part__line"></div>
-                </div>
-                <div class="reg__socials">
-                    <button class="social-btn fb-btn">
-                        <i class="social-btn__icon fab fa-facebook"></i>
-                        <span class="social-btn__fb-text">Facebook</span> 
-                    </button>
-                    <button class="social-btn gg-btn">
-                        <i class="social-btn__icon fab fa-google"></i>
-                        <span class="social-btn__gg-text">Google</span> 
-                    </button>
-                    <button class="social-btn apple-btn">
-                        <i class="social-btn__icon fab fa-apple"></i>
-                        <span class="social-btn__apple-text">Apple</span> 
-                    </button>
-                </div>
+                <footer class="sign-up__footer">
+                    Bạn đã có tài khoản?
+                    <a href="">Đăng nhập</a>
+                </footer>
             </div>
-            <footer class="log-in__footer">
-                Bạn mới biết đến Shopee?
-                <a href="">Đăng ký</a>
-            </footer>
+            <div class="log-in">
+                <header class="log-in__header">Đăng Nhập</header>
+                <div class="log-in__container">
+                    <input type="text" class="log-in__inp" placeholder="Email/Số điện thoại/Tên đăng nhập">
+                    <input type="tel" class="log-in__inp" placeholder="Mật khẩu">
+                    <button class="log-in__btn">ĐĂNG NHẬP</button>
+                    <div class="log-in__another-login">
+                        <a href="">Quên mật khẩu</a>
+                        <a href="">Đăng nhập với SMS</a>
+                    </div>
+                    <div class="separate-part">
+                        <div class="separate-part__line"></div>
+                        <p class="separate-part__or-text">HOẶC</p>
+                        <div class="separate-part__line"></div>
+                    </div>
+                    <div class="reg__socials">
+                        <button class="social-btn fb-btn">
+                            <i class="social-btn__icon fab fa-facebook"></i>
+                            <span class="social-btn__fb-text">Facebook</span> 
+                        </button>
+                        <button class="social-btn gg-btn">
+                            <i class="social-btn__icon fab fa-google"></i>
+                            <span class="social-btn__gg-text">Google</span> 
+                        </button>
+                        <button class="social-btn apple-btn">
+                            <i class="social-btn__icon fab fa-apple"></i>
+                            <span class="social-btn__apple-text">Apple</span> 
+                        </button>
+                    </div>
+                </div>
+                <footer class="log-in__footer">
+                    Bạn mới biết đến Shopee?
+                    <a href="">Đăng ký</a>
+                </footer>
+            </div>
         </div>
     </div>
 </body>
