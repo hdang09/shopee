@@ -691,10 +691,6 @@
     text-decoration: none;
 }
 
-.filter-mobile {
-
-}
-
 .search-bar__goback-icon,
 .filter-mobile__icon {
     color: var(--primary-color);
@@ -844,8 +840,6 @@
     color: var(--white-color);
     margin-left: 12px;
 }
-
-
 
 .filter__icon {
     display: none;
