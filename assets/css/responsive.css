@@ -128,6 +128,7 @@
         position: fixed;
         left: 0;
         right: 0;
+        height: var(--sort-bar-mobile-height);
         top: var(--header-height);
         animation: PullDown linear 0.25s;
     }
@@ -146,7 +147,7 @@
 
     .search-history {
         position: fixed;
-        top: 120px;
+        top: calc(var(--header-height) + var(--sort-bar-mobile-height) + 5px);
         width: 100%;
     }
 
