@@ -1062,7 +1062,7 @@
 
 .sort-bar__item--active .sort-bar__item-link {
     color: var(--primary-color);
-    height: 45px;
+    height: calc(var(--sort-bar-mobile-height) - 1px);
     border-bottom: 2px solid var(--primary-color);
 }
 
