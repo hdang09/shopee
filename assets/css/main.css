@@ -1088,6 +1088,7 @@
 .go-back__link {
     cursor: pointer;
     text-decoration: none;
+    color: var(--black-color);
     font-weight: 400;
     font-size: 1.4rem;
 }
@@ -1525,10 +1526,14 @@
 .footer__list {
     list-style: none;
     margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 .payment--img {
-    width: 190px;
+    margin: auto;
+    max-width: 190px;
+    width: 100%;
     padding-bottom: 25px;
 }
 
@@ -1608,6 +1613,7 @@
     font-size: 1.2rem;
     text-decoration: none;
     padding: 5px 25px;
+    color: var(--black-color);
     /* border-right: 2px #b9b8b9 solid;  */
 }
 .social--link {
@@ -1641,6 +1647,7 @@
     text-align: center;
     font-size: 1.2rem;
     line-height: 2;
+    margin-bottom: 5px;
 }
 
 .info-apps {

@@ -1,5 +1,12 @@
 /* Tablet & Mobile */
 @media (max-width: 63.9375em) {
+    :root {
+        /* Height */
+        --header-height: 56px;
+        --nav-bar-height: 0px;
+        --header-with-search-height: calc(var(--header-height) - var(--nav-bar-height));
+    }
+
     .hide-on-tablet-mobile {
         display: none;
     }
@@ -54,13 +61,6 @@
 
 /* Tablet */
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
-    :root {
-        /* Height */
-        --header-height: 56px;
-        --nav-bar-height: 0px;
-        --header-with-search-height: calc(var(--header-height) - var(--nav-bar-height));
-    }
-
     #header {
         background-image: unset;
         background-color: var(--white-color);
@@ -109,13 +109,6 @@
 
 /* Mobile */
 @media (max-width: 46.1875em) {
-    :root {
-        /* Height */
-        --header-height: 72px;
-        --nav-bar-height: 0px;
-        --header-with-search-height: calc(var(--header-height) - var(--nav-bar-height));
-    }
-    
     .hide-on-mobile {
         display: none;
     }
@@ -166,7 +159,7 @@
     }
 
     .shopee-logo__icon {
-        height: 45px;
+        height: 35px;
         margin: 0;
         line-height: auto;
     }
