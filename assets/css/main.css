@@ -698,6 +698,7 @@
     align-self: center;
     cursor: pointer;
     display: none;
+    padding: 10px;
 }
 
 
