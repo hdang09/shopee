@@ -794,16 +794,14 @@
 }
 
 .filter-drawer__section-list {
-    display: flex;
-    flex-wrap: wrap;
     list-style: none;
-    justify-content: space-evenly;
 }
 
 .filter-drawer__section-item {
 }
 
 .filter-drawer__section-item-link {
+    width: 100%;
     margin: 4px 0;
     background-color: #fafafa;
     display: block;
